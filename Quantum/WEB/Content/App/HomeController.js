@@ -1,0 +1,1 @@
+﻿App.controller('HomeController', function ($scope, $http, $location) { });
