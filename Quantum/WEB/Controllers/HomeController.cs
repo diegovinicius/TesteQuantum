@@ -1,7 +1,4 @@
-﻿using System.Linq;
-using System.Web.Mvc;
-using WEB.DAL;
-using WEB.DAL.Repositorios;
+﻿using System.Web.Mvc;
 
 namespace WEB.Controllers
 {
@@ -10,9 +7,6 @@ namespace WEB.Controllers
 
         public ActionResult Index()
         {
-            FuncionarioRepositorio _funcionarios = new FuncionarioRepositorio();
-            _funcionarios.GetAll();
-
             return View();
         }
     }
