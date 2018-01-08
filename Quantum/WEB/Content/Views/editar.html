@@ -1,0 +1,24 @@
+﻿<h1>Editar - <small>{{funcionario.Nome}}</small></h1>
+
+
+<form name="funcionarioForm" ng-submit="salvar()">
+    <div class="form-group">
+        <label for="nome">Nome</label>
+        <input type="text" class="form-control" name="nome" id="nome" placeholder="Nome" ng-model="funcionario.Nome"
+               ng-required="true" ng-class="{ 'is-invalid' : funcionarioForm.nome.$invalid && !funcionarioForm.nome.$pristine }">
+    </div>
+
+    <div class="form-group">
+        <label for="matricula">Matrícula</label>
+        <input type="text" class="form-control" name="matricula" id="matricula" placeholder="Matrícula" ng-model="funcionario.Matricula"
+               ng-required="true" ng-class="{ 'is-invalid' : funcionarioForm.matricula.$invalid && !funcionarioForm.matricula.$pristine }">
+    </div>
+
+    <div class="form-group">
+        <label for="cpf">CPF</label>
+        <input type="text" class="form-control" name="cpf" id="cpf" placeholder="CPF" ng-model="funcionario.CPF"
+               ng-required="true" ng-class="{ 'is-invalid' : funcionarioForm.cpf.$invalid && !funcionarioForm.cpf.$pristine }">
+    </div>
+    <button type="button" class="btn btn-default" ng-click="cancelar()">Cancelar</button>
+    <button type="submit" class="btn btn-dark">Salvar</button>
+</form>

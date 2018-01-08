@@ -1,1 +1,29 @@
-﻿<h1>Opa</h1>
+﻿<h2>Funcionarios</h2>
+
+<table class="table">
+    <thead class="thead-dark">
+        <tr>
+            <th>Codigo</th>
+            <th>Matricula</th>
+            <th>Nome</th>
+            <th>CPF</th>
+            <th>Situação</th>
+            <th>Opções</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr ng-repeat="funcionario in funcionarios">
+            <td>{{funcionario.Codigo}}</td>
+            <td>{{funcionario.Matricula}}</td>
+            <td>{{funcionario.Nome}}</td>
+            <td>{{funcionario.CPF}}</td>
+            <td class="text-center">
+                <span ng-show="funcionario.Situacao == 0" class="badge badge-pill badge-danger">Inativo</span>
+                <span ng-show="funcionario.Situacao == 1" class="badge badge-pill badge-success">Ativo</span>
+            </td>
+            <td>
+                <a href="#/Editar/{{funcionario.Codigo}}" class="btn btn-outline-dark btn-sm"><i class="fa fa-edit"></i> Editar</a>
+            </td>
+        </tr>
+    </tbody>
+</table>

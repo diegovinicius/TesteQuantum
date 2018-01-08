@@ -15,13 +15,19 @@ App
 
         $routeProvider
             //HOME
-             .when('/', {
-                 controller: 'HomeController',
-                 templateUrl: 'Content/Views/home.html',
+            .when('/', {
+                controller: 'HomeController',
+                templateUrl: 'Content/Views/home.html',
 
-                 title: 'Home',
-             })
+                title: 'Home',
+            })
+            //EDITAR
+            .when('/Editar/:id', {
+                controller: 'EditarController',
+                templateUrl: 'Content/Views/editar.html',
+
+                title: 'Editar',
+            })
+            //DEFAULT
             .otherwise({ redirectTo: '/' });
-
-        $locationProvider.html5Mode(true);
     });

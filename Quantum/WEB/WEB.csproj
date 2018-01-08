@@ -195,9 +195,11 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\App\EditarController.js" />
     <Content Include="Content\App\HomeController.js" />
     <Content Include="Content\App\Modulo.js" />
     <Content Include="Content\App\ModuloController.js" />
+    <Content Include="Content\Views\editar.html" />
     <Content Include="Content\Views\home.html" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
